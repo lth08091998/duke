@@ -12,7 +12,7 @@ public class TaskCollectionTest {
     @Test
     public void testGetMethod() {
         TaskCollection tc = new TaskCollection();
-        tc.resetTasks()
+        tc.resetTasks();
         tc.add(new Task("a"));
         assertEquals("a", tc.get(0).getDescription(), "get correct task in collection");
     }
